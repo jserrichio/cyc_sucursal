@@ -1,0 +1,16 @@
+program cyc_sucursal;
+
+uses
+  Forms,
+  principal in 'principal.pas' {form_principal},
+  data_module in 'data_module.pas' {DataModule1: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(Tform_principal, form_principal);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.Run;
+end.

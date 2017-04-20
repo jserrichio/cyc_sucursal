@@ -1,0 +1,4 @@
+-cuando se elimina un producto de la fabrica, se debe eliminar en las sucursales?
+-hay cuenta corriente para clientes en las sucursales?
+-se maneja un precio unico?
+-como debemos hacer la carga de stock? si permito que los empleados puedan modificar el stock a su gusto no puedo controlar posibles faltantes de mercaderia.
