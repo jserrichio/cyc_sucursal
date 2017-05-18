@@ -158,8 +158,6 @@
     <File Path="clientenuevo.dfm"/>
     <File Path="consultarstock.pas"/>
     <File Path="consultarstock.dfm"/>
-    <File Path="cuentaCorriente.pas"/>
-    <File Path="cuentaCorriente.dfm"/>
     <File Path="datamodule.pas"/>
     <File Path="datamodule.dfm"/>
     <File Path="devolucion.pas"/>
@@ -184,8 +182,6 @@
     <File Path="reporteCinturonHombre.dfm"/>
     <File Path="reporteCinturonMujer.pas"/>
     <File Path="reporteCinturonMujer.dfm"/>
-    <File Path="reporteDeudaClientes.pas"/>
-    <File Path="reporteDeudaClientes.dfm"/>
     <File Path="reporteMedias.pas"/>
     <File Path="reporteMedias.dfm"/>
     <File Path="reporteNinosHombre.pas"/>
