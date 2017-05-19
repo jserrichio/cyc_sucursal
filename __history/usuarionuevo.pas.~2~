@@ -1,0 +1,24 @@
+unit usuarionuevo;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  Tfusuarionuevo = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fusuarionuevo: Tfusuarionuevo;
+
+implementation
+
+{$R *.dfm}
+
+end.

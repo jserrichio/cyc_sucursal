@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, Menus, pngimage, ExtCtrls, ComCtrls, StdCtrls, Keyboard;
+  Dialogs, Menus, pngimage, ExtCtrls, ComCtrls, StdCtrls;
 
 type
   TForm1 = class(TForm)
@@ -47,9 +47,6 @@ type
     Deudadeclientes1: TMenuItem;
     Acercade1: TMenuItem;
     Recuperarproductoeliminado1: TMenuItem;
-    Usuarios1: TMenuItem;
-    Vermodificarusuarios1: TMenuItem;
-    Agregarusuario1: TMenuItem;
     procedure Ingresarproductonuevo1Click(Sender: TObject);
     procedure Nuevaventa1Click(Sender: TObject);
     procedure Stock1Click(Sender: TObject);
@@ -72,7 +69,6 @@ type
     procedure FormCreate(Sender: TObject);
     procedure Acercade1Click(Sender: TObject);
     procedure Recuperarproductoeliminado1Click(Sender: TObject);
-    procedure Vermodificarusuarios1Click(Sender: TObject);
   private
     { Private declarations }
 
@@ -93,7 +89,7 @@ uses productonuevo, datamodule, venta, consultarstock, clientenuevo,
   reporteCinturonHombre, reporteCinturonMujer, reporteBolsa,
   cargarstockmedia, reporteMedias, reporteNinosHombre, reporteNinosMujer,
   cargarstockremeras, reporteDeudaClientes, acerca,
-  productoEliminado, verusuarios;
+  productoEliminado;
 {$R *.dfm}
 
 procedure TForm1.Acercade1Click(Sender: TObject);
@@ -293,10 +289,5 @@ begin
 end;
 
 
-
-procedure TForm1.Vermodificarusuarios1Click(Sender: TObject);
-begin
-fverusuarios.ShowModal;
-end;
 
 end.

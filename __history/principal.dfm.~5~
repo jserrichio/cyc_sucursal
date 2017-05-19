@@ -223,8 +223,8 @@ object Form1: TForm1
       11A5E4E90000000049454E44AE426082}
   end
   object MainMenu1: TMainMenu
-    Left = 120
-    Top = 32
+    Left = 88
+    Top = 40
     object Inicio1: TMenuItem
       Caption = 'Inicio'
       object Salir1: TMenuItem
@@ -356,16 +356,6 @@ object Form1: TForm1
     object Acercade1: TMenuItem
       Caption = 'Acerca de'
       OnClick = Acercade1Click
-    end
-    object Usuarios1: TMenuItem
-      Caption = 'Usuarios'
-      object Vermodificarusuarios1: TMenuItem
-        Caption = 'Ver / modificar usuarios'
-        OnClick = Vermodificarusuarios1Click
-      end
-      object Agregarusuario1: TMenuItem
-        Caption = 'Agregar usuario'
-      end
     end
   end
 end

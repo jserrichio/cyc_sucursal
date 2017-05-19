@@ -1,0 +1,65 @@
+unit verusuarios;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, Grids, DBGrids;
+
+type
+  Tfverusuarios = class(TForm)
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Button2: TButton;
+    Button3: TButton;
+    Button1: TButton;
+    DBGrid1: TDBGrid;
+    Panel1: TPanel;
+    LabeledEdit1: TLabeledEdit;
+    LabeledEdit5: TLabeledEdit;
+    LabeledEdit2: TLabeledEdit;
+    procedure Button3Click(Sender: TObject);
+  private
+    { Private declarations }
+    procedure actualizarConsulta;
+    procedure cargarUsuarioEnComponente;
+    procedure actualizarPunteroUsuario;
+  public
+    { Public declarations }
+  end;
+
+var
+  fverusuarios: Tfverusuarios;
+
+implementation
+
+uses datamodule, usuarionuevo;
+{$R *.dfm}
+
+procedure Tfverusuarios.Button3Click(Sender: TObject);
+begin
+  fusuarionuevo.setNuevo;
+  fusuarionuevo.ShowModal;
+  self.actualizarConsulta;
+
+end;
+
+procedure Tfverusuarios.actualizarConsulta;
+begin
+  datamodule1.Qusuario.SQL.Clear;
+  datamodule1.Qusuario.SQL.Add('select * from cliente');
+
+  datamodule1.Qusuario.Open;
+  datamodule1.Qusuario.Active := true;
+end;
+
+procedure Tfverusuarios.cargarUsuarioEnComponente;
+begin
+  // cargar cliente seleccionado en labelededit
+  LabeledEdit1.Text := datamodule1.cliente.FieldByName('nombre').AsString;
+  LabeledEdit2.Text := datamodule1.cliente.FieldByName('apellido').AsString;
+  LabeledEdit5.Text := datamodule1.cliente.FieldByName('email').AsString;
+
+end;
+
+end.
