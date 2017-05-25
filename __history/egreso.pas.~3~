@@ -1,0 +1,43 @@
+unit egreso;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls;
+
+type
+  Tfegreso = class(TForm)
+    LabeledEdit1: TLabeledEdit;
+    LabeledEdit2: TLabeledEdit;
+    Button1: TButton;
+    Button2: TButton;
+  private
+    { Private declarations }
+    function camposCompletos: boolean;
+  public
+    { Public declarations }
+  end;
+
+var
+  fegreso: Tfegreso;
+
+implementation
+
+{$R *.dfm}
+
+function Tfegreso.camposCompletos;
+begin
+  if ((LabeledEdit1.Text <> '') and (LabeledEdit2.Text <> '')) then
+  begin
+    result := true;
+  end
+  else
+  begin
+    ShowMessage('Complete los 2 campos');
+    result := false;
+
+  end;
+end;
+
+end.

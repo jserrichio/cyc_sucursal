@@ -353,10 +353,6 @@ object Form1: TForm1
         Caption = 'Ventas'
       end
     end
-    object Acercade1: TMenuItem
-      Caption = 'Acerca de'
-      OnClick = Acercade1Click
-    end
     object Usuarios1: TMenuItem
       Caption = 'Usuarios'
       object Vermodificarusuarios1: TMenuItem
@@ -365,7 +361,27 @@ object Form1: TForm1
       end
       object Agregarusuario1: TMenuItem
         Caption = 'Agregar usuario'
+        OnClick = Agregarusuario1Click
       end
+    end
+    object Caja1: TMenuItem
+      Caption = 'Caja'
+      OnClick = Caja1Click
+    end
+    object Fabrica1: TMenuItem
+      Caption = 'Fabrica'
+      object Pedidospendientes1: TMenuItem
+        Caption = 'Pedidos pendientes'
+        Enabled = False
+      end
+      object Stockenfabrica1: TMenuItem
+        Caption = 'Stock en fabrica'
+        Enabled = False
+      end
+    end
+    object Acercade1: TMenuItem
+      Caption = 'Acerca de'
+      OnClick = Acercade1Click
     end
   end
 end

@@ -1,4 +1,1 @@
-Agregar talle 16
-Permitir ocultar producto viejo
-Talles de niños en consulta general de stock
-
+--> Verificar que al registrar un nuevo egreso en el campo valor ingresen un numero y no un string.

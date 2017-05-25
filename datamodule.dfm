@@ -377,11 +377,10 @@ object DataModule1: TDataModule1
     Top = 640
   end
   object ADOConnection1: TADOConnection
-    Connected = False
+    Connected = True
     ConnectionString = 
-      'Provider=MSDASQL.1;Password=maiser1989;Persist Security Info=Tru' +
-      'e;User ID=root;Data Source=bd_sucursal;Initial Catalog=cyc_sucur' +
-      'sal_8'
+      'Provider=MSDASQL.1;Persist Security Info=False;User ID=maiser;Da' +
+      'ta Source=db_sucursal;Initial Catalog=cyc_sucursal_8;'
     LoginPrompt = False
     Left = 48
     Top = 48
@@ -1258,5 +1257,98 @@ object DataModule1: TDataModule1
       end>
     Left = 1480
     Top = 504
+  end
+  object QUsuario: TADOQuery
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select * from usuario')
+    Left = 864
+    Top = 584
+  end
+  object DSQUsuario: TDataSource
+    DataSet = QUsuario
+    Left = 864
+    Top = 640
+  end
+  object usuario: TADOTable
+    Connection = ADOConnection1
+    TableName = 'usuario'
+    Left = 1176
+    Top = 64
+  end
+  object dsusuario: TDataSource
+    DataSet = usuario
+    Left = 1176
+    Top = 128
+  end
+  object nuevoUsuario: TADOStoredProc
+    Connection = ADOConnection1
+    ProcedureName = 'nuevoUsuario'
+    Parameters = <
+      item
+        Name = 'nom'
+        Attributes = [paNullable]
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'ape'
+        Attributes = [paNullable]
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'mail'
+        Attributes = [paNullable]
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'pass'
+        Attributes = [paNullable]
+        DataType = ftString
+        Size = 50
+      end>
+    Left = 1648
+    Top = 512
+  end
+  object modificarUsuario: TADOStoredProc
+    Connection = ADOConnection1
+    ProcedureName = 'modificarUsuario'
+    Parameters = <
+      item
+        Name = 'nom'
+        Attributes = [paNullable]
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'ape'
+        Attributes = [paNullable]
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'mail'
+        Attributes = [paNullable]
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'pass'
+        Attributes = [paNullable]
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'cli'
+        Attributes = [paNullable]
+        DataType = ftInteger
+        Precision = 10
+      end>
+    Left = 1648
+    Top = 584
   end
 end

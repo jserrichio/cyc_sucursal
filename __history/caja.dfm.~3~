@@ -1,0 +1,64 @@
+object fcaja: Tfcaja
+  Left = 0
+  Top = 0
+  Caption = 'Caja'
+  ClientHeight = 655
+  ClientWidth = 882
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ingresos: TGroupBox
+    Left = 32
+    Top = 24
+    Width = 577
+    Height = 273
+    Caption = 'Ingresos'
+    TabOrder = 0
+    object DBGrid1: TDBGrid
+      Left = 16
+      Top = 32
+      Width = 513
+      Height = 217
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+    end
+  end
+  object egresos: TGroupBox
+    Left = 32
+    Top = 311
+    Width = 577
+    Height = 322
+    Caption = 'Egresos'
+    TabOrder = 1
+    object DBGrid2: TDBGrid
+      Left = 16
+      Top = 32
+      Width = 513
+      Height = 217
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+    end
+    object Button1: TButton
+      Left = 16
+      Top = 272
+      Width = 113
+      Height = 25
+      Caption = 'Registrar egreso'
+      TabOrder = 1
+    end
+  end
+end

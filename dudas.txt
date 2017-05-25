@@ -2,3 +2,7 @@
 -hay cuenta corriente para clientes en las sucursales?
 -se maneja un precio unico?
 -como debemos hacer la carga de stock? si permito que los empleados puedan modificar el stock a su gusto no puedo controlar posibles faltantes de mercaderia.
+
+
+- Es conveniente manejar usuarios con contraseñas y obligar a estar logueados para todo?
+- La caja es unica por dia o se abre y cierra varias veces en el dia?

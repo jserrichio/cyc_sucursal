@@ -11,6 +11,7 @@ object fverusuarios: Tfverusuarios
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Panel2: TPanel
@@ -32,6 +33,7 @@ object fverusuarios: Tfverusuarios
         Height = 33
         Caption = 'Aceptar'
         TabOrder = 0
+        OnClick = Button2Click
       end
       object Button3: TButton
         Left = 304
@@ -49,6 +51,7 @@ object fverusuarios: Tfverusuarios
         Height = 33
         Caption = 'Modificar usuario actual'
         TabOrder = 2
+        OnClick = Button1Click
       end
     end
     object DBGrid1: TDBGrid
@@ -56,7 +59,7 @@ object fverusuarios: Tfverusuarios
       Top = 87
       Width = 660
       Height = 259
-      DataSource = DataModule1.dsusuario
+      DataSource = DataModule1.DSQUsuario
       Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
       TabOrder = 1
       TitleFont.Charset = DEFAULT_CHARSET
@@ -64,6 +67,7 @@ object fverusuarios: Tfverusuarios
       TitleFont.Height = -11
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
       Columns = <
         item
           Expanded = False

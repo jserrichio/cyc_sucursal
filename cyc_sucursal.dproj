@@ -135,6 +135,18 @@
 			<DCCReference Include="productoEliminado.pas">
 				<Form>recuperarProducto</Form>
 			</DCCReference>
+			<DCCReference Include="caja.pas">
+				<Form>fcaja</Form>
+			</DCCReference>
+			<DCCReference Include="usuarionuevo.pas">
+				<Form>fusuarionuevo</Form>
+			</DCCReference>
+			<DCCReference Include="verusuarios.pas">
+				<Form>fverusuarios</Form>
+			</DCCReference>
+			<DCCReference Include="egreso.pas">
+				<Form>fegreso</Form>
+			</DCCReference>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>

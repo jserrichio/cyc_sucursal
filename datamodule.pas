@@ -105,6 +105,12 @@ type
     dsqcctaller2: TDataSource;
     setSaldoCliente: TADOStoredProc;
     productoactivo: TIntegerField;
+    QUsuario: TADOQuery;
+    DSQUsuario: TDataSource;
+    usuario: TADOTable;
+    dsusuario: TDataSource;
+    nuevoUsuario: TADOStoredProc;
+    modificarUsuario: TADOStoredProc;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -137,7 +143,7 @@ begin
   cliente.Active := true;
   venta.Active := true;
   detalle_venta.Active := true;
-
+  usuario.Active := true;
 end;
 
 procedure TDataModule1.cargarConnectionString;

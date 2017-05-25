@@ -60,10 +60,10 @@ end;
 
 procedure Tfusuarionuevo.cargarUsuario;
 begin
-  LabeledEdit1.Text := datamodule1.cliente.FieldByName('nombre').AsString;
-  LabeledEdit2.Text := datamodule1.cliente.FieldByName('apellido').AsString;
-  LabeledEdit3.Text := datamodule1.cliente.FieldByName('email').AsString;
-  LabeledEdit4.Text := datamodule1.cliente.FieldByName('password').AsString;
+  LabeledEdit1.Text := datamodule1.usuario.FieldByName('nombre').AsString;
+  LabeledEdit2.Text := datamodule1.usuario.FieldByName('apellido').AsString;
+  LabeledEdit3.Text := datamodule1.usuario.FieldByName('email').AsString;
+  LabeledEdit4.Text := datamodule1.usuario.FieldByName('password').AsString;
 
 end;
 

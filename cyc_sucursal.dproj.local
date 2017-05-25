@@ -138,10 +138,16 @@
     <Transaction>2017/03/20 15:03:10.606.dfm,C:\Users\Juan\Documents\cyc_sucursal\reportePagosTaller.dfm=</Transaction>
     <Transaction>2017/03/20 15:46:08.202.pas,C:\Users\Juan\Documents\cyc_sucursal\ingresarPago.pas=</Transaction>
     <Transaction>2017/03/20 15:46:08.203.dfm,C:\Users\Juan\Documents\cyc_sucursal\ingresarPago.dfm=</Transaction>
+    <Transaction>2017/05/25 17:32:03.159.pas,C:\Users\Juan\git\cyc_sucursal\Unit3.pas=C:\Users\Juan\git\cyc_sucursal\caja.pas</Transaction>
+    <Transaction>2017/05/25 17:32:03.159.dfm,C:\Users\Juan\git\cyc_sucursal\Unit3.dfm=C:\Users\Juan\git\cyc_sucursal\caja.dfm</Transaction>
+    <Transaction>2017/05/25 20:00:38.322.pas,C:\Users\Juan\git\cyc_sucursal\Unit3.pas=C:\Users\Juan\git\cyc_sucursal\egreso.pas</Transaction>
+    <Transaction>2017/05/25 20:00:38.322.dfm,C:\Users\Juan\git\cyc_sucursal\Unit3.dfm=C:\Users\Juan\git\cyc_sucursal\egreso.dfm</Transaction>
   </Transactions>
-	<ProjectSortOrder AutoSort="0" SortType="1">
+	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="acerca.pas"/>
     <File Path="acerca.dfm"/>
+    <File Path="caja.pas"/>
+    <File Path="caja.dfm"/>
     <File Path="cargarstockbolsa.pas"/>
     <File Path="cargarstockbolsa.dfm"/>
     <File Path="cargarstockcinturon.pas"/>
@@ -188,10 +194,10 @@
     <File Path="reporteNinosHombre.dfm"/>
     <File Path="reporteNinosMujer.pas"/>
     <File Path="reporteNinosMujer.dfm"/>
-    <File Path="reportePantalonHombre.pas"/>
-    <File Path="reportePantalonHombre.dfm"/>
     <File Path="reportePantalonMujer.pas"/>
     <File Path="reportePantalonMujer.dfm"/>
+    <File Path="reportePantalonHombre.pas"/>
+    <File Path="reportePantalonHombre.dfm"/>
     <File Path="reporteRemeraHombre.pas"/>
     <File Path="reporteRemeraHombre.dfm"/>
     <File Path="reporteRemeraMujer.pas"/>
@@ -200,5 +206,11 @@
     <File Path="venta.dfm"/>
     <File Path="verclientes.pas"/>
     <File Path="verclientes.dfm"/>
+    <File Path="usuarionuevo.pas"/>
+    <File Path="usuarionuevo.dfm"/>
+    <File Path="verusuarios.pas"/>
+    <File Path="verusuarios.dfm"/>
+    <File Path="egreso.pas"/>
+    <File Path="egreso.dfm"/>
   </ProjectSortOrder>
 </BorlandProject>

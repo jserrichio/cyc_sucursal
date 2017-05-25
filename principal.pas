@@ -50,6 +50,10 @@ type
     Usuarios1: TMenuItem;
     Vermodificarusuarios1: TMenuItem;
     Agregarusuario1: TMenuItem;
+    Caja1: TMenuItem;
+    Fabrica1: TMenuItem;
+    Pedidospendientes1: TMenuItem;
+    Stockenfabrica1: TMenuItem;
     procedure Ingresarproductonuevo1Click(Sender: TObject);
     procedure Nuevaventa1Click(Sender: TObject);
     procedure Stock1Click(Sender: TObject);
@@ -73,6 +77,8 @@ type
     procedure Acercade1Click(Sender: TObject);
     procedure Recuperarproductoeliminado1Click(Sender: TObject);
     procedure Vermodificarusuarios1Click(Sender: TObject);
+    procedure Caja1Click(Sender: TObject);
+    procedure Agregarusuario1Click(Sender: TObject);
   private
     { Private declarations }
 
@@ -93,7 +99,7 @@ uses productonuevo, datamodule, venta, consultarstock, clientenuevo,
   reporteCinturonHombre, reporteCinturonMujer, reporteBolsa,
   cargarstockmedia, reporteMedias, reporteNinosHombre, reporteNinosMujer,
   cargarstockremeras, reporteDeudaClientes, acerca,
-  productoEliminado, verusuarios;
+  productoEliminado, verusuarios, caja, usuarionuevo;
 {$R *.dfm}
 
 procedure TForm1.Acercade1Click(Sender: TObject);
@@ -112,11 +118,23 @@ end;
 
 
 
+procedure TForm1.Agregarusuario1Click(Sender: TObject);
+begin
+ fusuarionuevo.setNuevo;
+ fusuarionuevo.ShowModal;
+
+end;
+
 procedure TForm1.Bolsa1Click(Sender: TObject);
 begin
   datamodule1.QreporteBolsa.Active := false;
   datamodule1.QreporteBolsa.Active := true;
   freporteBolsa.QuickRep1.preview;
+end;
+
+procedure TForm1.Caja1Click(Sender: TObject);
+begin
+fcaja.ShowModal;
 end;
 
 procedure TForm1.Cinturon1Click(Sender: TObject);

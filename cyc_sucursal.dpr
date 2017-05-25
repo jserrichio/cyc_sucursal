@@ -31,7 +31,11 @@ uses
   reporteNinosMujer in 'reporteNinosMujer.pas' {fReporteNinosMujer},
   remitoPago in 'remitoPago.pas' {fremitoPago},
   acerca in 'acerca.pas' {acercade},
-  productoEliminado in 'productoEliminado.pas' {recuperarProducto};
+  productoEliminado in 'productoEliminado.pas' {recuperarProducto},
+  caja in 'caja.pas' {fcaja},
+  usuarionuevo in 'usuarionuevo.pas' {fusuarionuevo},
+  verusuarios in 'verusuarios.pas' {fverusuarios},
+  egreso in 'egreso.pas' {fegreso};
 
 {$R *.res}
 
@@ -67,6 +71,10 @@ begin
   Application.CreateForm(TfreporteNinosH, freporteNinosH);
   Application.CreateForm(TfReporteNinosMujer, fReporteNinosMujer);
   Application.CreateForm(TfremitoPago, fremitoPago);
+  Application.CreateForm(Tfcaja, fcaja);
+  Application.CreateForm(Tfusuarionuevo, fusuarionuevo);
+  Application.CreateForm(Tfverusuarios, fverusuarios);
+  Application.CreateForm(Tfegreso, fegreso);
   //  Application.CreateForm(TfReporteDeudaClientes, fReporteDeudaClientes);
   Application.CreateForm(Tacercade, acercade);
   Application.CreateForm(TrecuperarProducto, recuperarProducto);
